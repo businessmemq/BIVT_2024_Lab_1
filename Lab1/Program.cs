@@ -9,7 +9,7 @@ public class Program
     {
         Program program = new Program();
 
-        //program.Task_1_1();
+        program.Task_1_1();
         //program.Task_1_2();
         //program.Task_1_3();
         //program.Task_1_4(0.9);
@@ -53,7 +53,7 @@ public class Program
     public int Task_1_1()
     {
         int answer = 0;
-
+        Console.WriteLine(123);
         // code here
 
         // end
