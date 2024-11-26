@@ -591,11 +591,12 @@ public class Program
 
         // code here
         double a = Math.PI / 5, b = Math.PI, h = Math.PI / 25;
-        double s = 0, cur = 1;
+        double s = 0, cur = 1, cur1 = 1, curi = 1;
         int i = 1;
         while (true)
         {
-			cur = Math.Pow(-1, i) * Math.Cos(i * x) / Math.Pow(i, 2);
+			cur1 *= -1;
+			cur = cur1 * Math.Cos(i * x) / (i * i);
 			if (Math.Abs(cur) < 0.0001)
 			{
 				break;
@@ -603,9 +604,7 @@ public class Program
 			S += cur;
             ++i;
 		}
-        y = (Math.Pow(x, 2) - Math.Pow(Math.PI, 2) / 3) / 4;
-        //S = Math.Round(S, 2);
-		//y = Math.Round(y, 2);
+        y = (x * x - Math.PI * Math.PI / 3) / 4;
 		// end
 
 		return (S, y);
